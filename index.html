@@ -1,94 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Car Details</title>
-	<link rel="stylesheet" href="styles.css">
-  <script src="index.js"></script>
-</head>
-<body>
-  <header class="header">
-    <div class="identity">
-        <img src="logo.png" alt="Logo">
-    </div>
-    <div class="heading">
-        <h1>CAR DETAILS</h1>
-    </div>
-</header>
-
-<div class="wrapper">
-    <div class="title">
-      Fill The Following Details
-    </div>
-    <div class="form">
-      <form method="post" action="https://www.daraz.pk/">
-
-       <div class="inputfield">
-          <label>Registration Number: </label>
-          <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter Car Registration No" required>
-          <label id="mixedboxes" >Engine Number : </label>
-          <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter Engine No" required>
-       </div>  
-       
-       <div class="inputfield">
-        <label>Chasis Number : </label>
-        <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter the Chasis Number" required>
-        <label id="mixedboxes">Sum Insured :</label>
-        <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter The Total Sum Insured" required>
-     </div> 
-
-      <hr><br>
-      <div class="title">
-      CAR COMPANY
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center fs-3" href="#">
+          <img
+            src="logo.png"
+            alt=""
+            width="59"
+            height="60"
+            class="d-inline-block align-text-top"
+          />
+          &nbsp; Car Details
+        </a>
       </div>
-      <div class="inputfield">
-        <label>Name : </label>
-        <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Enter the Car Company" required>
-        <label id="mixedboxes" >Branch Code : </label>
-        <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter Branch Code" required>
-     </div>  
-   <hr><br>
-   <div class="title">
-   CAR MODEL
-   </div>
-   <div class="inputfield">
-     <label>Model Name : </label>
-     <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Enter the Car Model" required>
-     <label id="mixedboxes">Model Number : </label>
-     <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter Model Number" required>
-  </div> 
+    </nav>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">Fill The Following Details</div>
+        <div class="form">
+          <form method="post" action="https://www.daraz.pk/">
+            <div class="inputfield">
+              <label>Registration Number: </label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter Car Registration No"
+                required
+              />
+              <label id="mixedboxes">Engine Number: </label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter Engine No"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              <label>Chasis Number: </label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter the Chasis Number"
+                required
+              />
+              <label id="mixedboxes">Sum Insured:</label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter The Total Sum Insured"
+                required
+              />
+            </div>
+            <hr />
+            <br />
+            <div class="title">CAR COMPANY</div>
+            <div class="inputfield">
+              <label>Name: </label>
+              <input
+                type="text"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter the Car Company"
+                required
+              />
+              <label id="mixedboxes">Branch Code: </label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter Branch Code"
+                required
+              />
+            </div>
+            <hr />
+            <br />
+            <div class="title">CAR MODEL</div>
+            <div class="inputfield">
+              <label>Model Name: </label>
+              <input
+                type="text"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter the Car Model"
+                required
+              />
+              <label id="mixedboxes">Model Number: </label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter Model Number"
+                required
+              />
+            </div>
 
-<div class="inputfield">
-  <label>Body Type : </label>
-  <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Enter the Car Type" required>
-  <label id="mixedboxes">Seating Capacity :</label>
-  <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Car capacity" required>
-</div>
-<div class="inputfield">
-
-  <label>Cubic Capacity : </label>
-  <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Cubic Capacity" required>
-  <label id="mixedboxes">Color : </label>
-  <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Car color" required>
-
-</div>
-<div class="inputfield">
-  <label>Pre-Insurance Pics : </label>
-  <input id="fileupload" class="btn" type="file" accept="image" multiple="multiple" required/>
-</div> 
-<div class="inputfield">
-<label>Preview : </label>
-<div id="dvPreview"> 
-
-</div>
-</div>
-      <div class="inputfield">
-        <input type="reset" value="Reset" class="btn">
-        <input type="submit" value="Submit" class="btn">
+            <div class="inputfield">
+              <label>Body Type: </label>
+              <input
+                type="text"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Enter the Car Type"
+                required
+              />
+              <label id="mixedboxes">Seating Capacity:</label>
+              <input
+                type="number"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Car capacity"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              <label>Cubic Capacity: </label>
+              <input
+                type="text"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Cubic Capacity"
+                required
+              />
+              <label id="mixedboxes">Color : </label>
+              <input
+                type="text"
+                class="input"
+                onfocus="this.placeholder=''"
+                placeholder="Car color"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              <label>Pre-Insurance Pics: </label>
+              <input
+                id="fileupload"
+                class="btn"
+                type="file"
+                accept="image"
+                multiple="multiple"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              <label>Preview: </label>
+              <div id="dvPreview"></div>
+            </div>
+            <div class="inputfield">
+              <input type="reset" value="Reset" class="btn" />
+              <input type="submit" value="Submit" class="btn" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-</div>	
-</form>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
